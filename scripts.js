@@ -47,14 +47,17 @@ $("#loki-result").show();
 
 }
 
-
+// function showLokiForm() {
+//   $("#loki-result").hide();
+//   $("#loki-form").show();
+// }
 
 
 var thorResultText = `Dear diary,
 
 Today I feel like punching (name1) and kissing (name2.) (Name3) says I should do neither of these things. (Name4) says that I should do both
 
-Im feeling (adj1)~~ indecisive, so I might fuck around and (verb1) (ad1) instead.
+Im feeling indecisive, so I might fuck around and (verb1) (ad1) instead.
 
 Tonight I shall seek out giants to (verb2) obviously, and then drink as much (beverage) as I can swallow. I will eat more (food) than should be allowed, and then pass out with a full belly and a full heart, next to my beautiful, flaxen-haired wife.
 
