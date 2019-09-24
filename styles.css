@@ -5,3 +5,15 @@
 h1 {
   padding-top: 1em;
 }
+
+.results-col {
+  padding-top: 35px;
+}
+
+input {
+  display: block;
+}
+
+button {
+  margin-top: 10px;
+}

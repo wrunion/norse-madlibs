@@ -15,31 +15,111 @@
 
 <body>
   <div class="container">
-<h1>Welcome to Loki Libs!</h1>
-<h4>A mad-lib game about the Norse gods (note: not to be taken seriously)</h4>
+    <h1>Welcome to Loki Libs!</h1>
+    <h4 class="text-secondary">A mad-lib game about the Norse gods (Note: not to be taken seriously)</h4>
+    <form id="loki-form">
+      <!-- <h6>I want to create madlibs for:</h6>
+      <input type="checkbox" class="inline">Loki
+      <input type="checkbox" class="inline">Thor
+      <input type="checkbox" class="inline">Odin -->
 
-<button class="btn btn-outline-secondary" onclick="showLokiResult()">Click here!</button>
+      <!-- <div class="row"> -->
+      <!-- <div class="col-sm hidden1" id="loki-input"> -->
+      <h4>Loki</h4>
+      <div class="form-group">
+      <p class="text-secondary">First, we need four verbs (action words):</p>
+
+      <label>Verb 1:</label>
+      <input type="text" id="loki-verb1">
+      <label>Verb 2:</label>
+      <input type="text" id="loki-verb2">
+      <label>Verb 3:</label>
+      <input type="text" id="loki-verb3">
+      <label>Verb 4:</label>
+      <input type="text" id="loki-verb4">
+</div>
+<div class="form-group">
+      <p class="text-secondary">Then, we need two types of food:</p>
+      <label>First food:</label>
+      <input type="text" id="loki-food1">
+      <label>Second food:</label>
+      <input type="text" id="loki-food2">
+      </div>
+
+<div class="form-group">
+      <p class="text-secondary">And three adjectives (descriptive words)</p>
+      <label>Adjective 1:</label>
+      <input type="text" id="loki-adjective1">
+      <label>Adjective 2:</label>
+      <input type="text" id="loki-adjective2">
+      <label>Adjective 3:</label>
+      <input type="text" id="loki-adjective3">
+      </div>
+      <div class="form-group">
+      <p class="text-secondary">And finally, an adverb (ends in -ly)</p>
+      <lable>Adverb:</lable>
+      <input type="text" id="loki-adverb">
+      </div>
+
+      <button type="submit" class="btn btn-outline-success" onclick="showLoki()">Show Loki Lib</button>
 
 
-<div class="hidden" id="results">
-  <div class="row">
-    <div class="col-sm">
-<p id="loki-result">Loki test</p>
-    </div>
-    <div class="col-sm" id="thor-result">
-  <p>Thor test</p>
-    </div>
-    <div class="col-sm" id="odin-result">
-  <p>Odin test</p>
+      <!-- <p>test test</p>
+        </div>
+        <div class="col-sm hidden" id="thor-input">
+<p>test test</p>
+        </div>
+        <div class="col-sm hidden1" id="odin-input">
+<p>test test</p>
+        </div>
+      </div> -->
+
+    </form>
+
+    <!-- <button class="btn btn-outline-secondary" onclick="showLokiResult()">Click here!</button> -->
+
+
+    <div id="results-div">
+      <div id="loki-result" class="hidden results-col">
+        <h4>Loki libs:</h4>
+        <p class="text-secondary">Dear diary,</p>
+        <p class="text-secondary" id="loki-p1"></p>
+        <p class="text-secondary" id="loki-p2"></p>
+        <p class="text-secondary" id="loki-p3"></p>
+        <p class="text-secondary" id="loki-p4"></p>
+
+      </div>
+      <div id="thor-result" class="hidden results-col">
+        <h4>Thor libs:</h4>
+        <p>Thor placeholder</p>
+
+      </div>
+      <div id="odin-result" class="hidden results-col">
+        <h4>Odin libs:</h4>
+        <p>Odin placeholder</p>
+
+      </div>
     </div>
   </div>
-</div>
 
-</div>
 </body>
+
 </html>
 
+<div class="row">
+  <div class="col-sm" id="loki-result">
+    <h4>Loki libs:</h4>
+    <p class="text-secondary">Dear diary,</p>
+  </div>
+  <div class="col-sm" id="thor-result">
+    <h4>Thor libs:</h4>
+    <p class="text-secondary">Dear diary,</p>
+  </div>
+  <div class="col-sm" id="odin-result">
+    <h4>Odin libs:</h4>
+    <p class="text-secondary">Dear diary,</p>
 
+  </div>
 
 
 <!--Dear diary,
